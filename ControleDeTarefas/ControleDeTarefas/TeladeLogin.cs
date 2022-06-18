@@ -54,7 +54,7 @@ namespace ControleDeTarefas
         private void TeladeLogin_Load(object sender, EventArgs e)
         {
 
-            Arquivo.GravarTextoNoFinalDoArquivo("Abriu a tela de login", @"C:\Projeto\Controle_de_tarefas\ControleDeTarefas\ControleDeTarefas\bin\Debug\Load.txt");
+            Arquivo.GravarLog("Abriu a tela de login");
 
         }
     }

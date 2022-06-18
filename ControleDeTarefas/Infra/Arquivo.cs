@@ -20,5 +20,11 @@ namespace Infra
             fileStream.Close();
 
         }
+
+        public static void GravarLog(string _texto)
+        {
+            GravarTextoNoFinalDoArquivo(DateTime.Now.ToString() + _texto, Constantes.DiretorioLog +
+                "\\" + Constantes.NomeArquivoLog);
+        }
     }
 }
