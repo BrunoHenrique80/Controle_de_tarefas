@@ -50,7 +50,7 @@ namespace ControleDeTarefas
 
         private void buttonComentar_Click(object sender, EventArgs e)
         {
-            
+          
             using (TelaDeComentario frm = new TelaDeComentario())
             {
                 frm.ShowDialog();
@@ -71,6 +71,16 @@ namespace ControleDeTarefas
             tarefaBLL.Excluir(id);
             tarefaBindingSource.RemoveCurrent();
             MessageBox.Show("Registro excluido com secesso!");
+        }
+
+        private void tarefaBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+            if (tarefaBindingSource.Count > 0)
+            {
+                ComentarioBLL comentarioBLL = new ComentarioBLL();
+                int id_Tarefa = Convert.ToInt32(((DataRowView)tarefaBindingSource.Current).Row["Id"]);
+                comentarioBindingSource.DataSource = comentarioBLL.Buscar(id_Tarefa);
+            }
         }
     }
 }

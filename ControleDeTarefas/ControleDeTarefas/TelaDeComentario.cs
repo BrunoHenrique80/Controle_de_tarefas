@@ -34,7 +34,6 @@ namespace ControleDeTarefas
 
             ComentarioBLL comentarioBLL = new ComentarioBLL();
             Comentario comentario = new Comentario();
-            comentario.Id = Convert.ToInt32(idTextBox.Text);
             comentario.Id_Tarefa = 1;
             comentario.Id_Usuario = 1;
             comentario.Descricao = descricaoTextBox.Text;

@@ -21,7 +21,7 @@ namespace DAL
 
                 cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
                 {
-                    Value = _tarefa.Id
+                   Value = IncrementaID()
                 });
 
                 cmd.Parameters.Add(new SqlParameter("@Id_Usuario", SqlDbType.Int)
@@ -59,6 +59,25 @@ namespace DAL
                 cn.Close();
             }
         }
+
+        private int IncrementaID()
+        {
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn.ConnectionString = Conexao.StringDeConexao;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select IsNULL(max(Id),0) +1 from Tarefa";
+                cn.Open();
+                return (int)cmd.ExecuteScalar();
+            }
+            finally
+            {
+                cn.Close();
+            }
+           }
 
         public DataTable Buscar(string _filtro)
         {

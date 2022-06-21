@@ -44,9 +44,14 @@ namespace ControleDeTarefas
             this.tarefaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonExcluir = new System.Windows.Forms.Button();
             this.buttonComentar = new System.Windows.Forms.Button();
+            this.comentarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comentarioDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comentarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comentarioDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,7 +64,7 @@ namespace ControleDeTarefas
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(675, 100);
+            this.panel1.Size = new System.Drawing.Size(685, 100);
             this.panel1.TabIndex = 0;
             // 
             // buttonSairDaTarefa
@@ -71,7 +76,7 @@ namespace ControleDeTarefas
             this.buttonSairDaTarefa.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSairDaTarefa.ForeColor = System.Drawing.Color.Gray;
             this.buttonSairDaTarefa.Image = global::ControleDeTarefas.Properties.Resources.sair;
-            this.buttonSairDaTarefa.Location = new System.Drawing.Point(627, 12);
+            this.buttonSairDaTarefa.Location = new System.Drawing.Point(636, 3);
             this.buttonSairDaTarefa.Name = "buttonSairDaTarefa";
             this.buttonSairDaTarefa.Size = new System.Drawing.Size(38, 41);
             this.buttonSairDaTarefa.TabIndex = 7;
@@ -83,7 +88,7 @@ namespace ControleDeTarefas
             this.Menu.AutoSize = true;
             this.Menu.BackColor = System.Drawing.Color.Transparent;
             this.Menu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu.Location = new System.Drawing.Point(296, 30);
+            this.Menu.Location = new System.Drawing.Point(248, 24);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(170, 46);
             this.Menu.TabIndex = 0;
@@ -119,7 +124,7 @@ namespace ControleDeTarefas
             this.buttonAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdicionar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdicionar.ForeColor = System.Drawing.Color.White;
-            this.buttonAdicionar.Location = new System.Drawing.Point(12, 504);
+            this.buttonAdicionar.Location = new System.Drawing.Point(12, 533);
             this.buttonAdicionar.Name = "buttonAdicionar";
             this.buttonAdicionar.Size = new System.Drawing.Size(83, 25);
             this.buttonAdicionar.TabIndex = 6;
@@ -129,6 +134,9 @@ namespace ControleDeTarefas
             // 
             // tarefaDataGridView
             // 
+            this.tarefaDataGridView.AllowUserToAddRows = false;
+            this.tarefaDataGridView.AllowUserToDeleteRows = false;
+            this.tarefaDataGridView.AllowUserToOrderColumns = true;
             this.tarefaDataGridView.AutoGenerateColumns = false;
             this.tarefaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tarefaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -139,7 +147,8 @@ namespace ControleDeTarefas
             this.tarefaDataGridView.DataSource = this.tarefaBindingSource;
             this.tarefaDataGridView.Location = new System.Drawing.Point(12, 148);
             this.tarefaDataGridView.Name = "tarefaDataGridView";
-            this.tarefaDataGridView.Size = new System.Drawing.Size(653, 350);
+            this.tarefaDataGridView.ReadOnly = true;
+            this.tarefaDataGridView.Size = new System.Drawing.Size(653, 194);
             this.tarefaDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -147,12 +156,14 @@ namespace ControleDeTarefas
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Usuario";
             this.dataGridViewTextBoxColumn2.HeaderText = "Id_Usuario";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -160,16 +171,19 @@ namespace ControleDeTarefas
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Descricao";
             this.dataGridViewTextBoxColumn3.HeaderText = "Descricao";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Estatus";
             this.dataGridViewTextBoxColumn4.HeaderText = "Estatus";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // tarefaBindingSource
             // 
             this.tarefaBindingSource.DataSource = typeof(Model.Tarefa);
+            this.tarefaBindingSource.CurrentChanged += new System.EventHandler(this.tarefaBindingSource_CurrentChanged);
             // 
             // buttonExcluir
             // 
@@ -178,7 +192,7 @@ namespace ControleDeTarefas
             this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExcluir.ForeColor = System.Drawing.Color.White;
-            this.buttonExcluir.Location = new System.Drawing.Point(490, 503);
+            this.buttonExcluir.Location = new System.Drawing.Point(490, 533);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(91, 26);
             this.buttonExcluir.TabIndex = 7;
@@ -193,7 +207,7 @@ namespace ControleDeTarefas
             this.buttonComentar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonComentar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonComentar.ForeColor = System.Drawing.Color.White;
-            this.buttonComentar.Location = new System.Drawing.Point(244, 503);
+            this.buttonComentar.Location = new System.Drawing.Point(256, 532);
             this.buttonComentar.Name = "buttonComentar";
             this.buttonComentar.Size = new System.Drawing.Size(87, 26);
             this.buttonComentar.TabIndex = 8;
@@ -201,13 +215,42 @@ namespace ControleDeTarefas
             this.buttonComentar.UseVisualStyleBackColor = false;
             this.buttonComentar.Click += new System.EventHandler(this.buttonComentar_Click);
             // 
+            // comentarioBindingSource
+            // 
+            this.comentarioBindingSource.DataSource = typeof(Model.Comentario);
+            // 
+            // comentarioDataGridView
+            // 
+            this.comentarioDataGridView.AllowUserToAddRows = false;
+            this.comentarioDataGridView.AllowUserToDeleteRows = false;
+            this.comentarioDataGridView.AllowUserToOrderColumns = true;
+            this.comentarioDataGridView.AutoGenerateColumns = false;
+            this.comentarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.comentarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8});
+            this.comentarioDataGridView.DataSource = this.comentarioBindingSource;
+            this.comentarioDataGridView.Location = new System.Drawing.Point(12, 348);
+            this.comentarioDataGridView.Name = "comentarioDataGridView";
+            this.comentarioDataGridView.ReadOnly = true;
+            this.comentarioDataGridView.Size = new System.Drawing.Size(653, 172);
+            this.comentarioDataGridView.TabIndex = 8;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Descricao";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Descricao";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
             // TelaDeTerefa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(675, 554);
+            this.ClientSize = new System.Drawing.Size(685, 619);
+            this.Controls.Add(this.comentarioDataGridView);
             this.Controls.Add(this.buttonComentar);
             this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.tarefaDataGridView);
@@ -225,6 +268,8 @@ namespace ControleDeTarefas
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comentarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comentarioDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,6 +291,9 @@ namespace ControleDeTarefas
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button buttonExcluir;
         private System.Windows.Forms.Button buttonComentar;
+        private System.Windows.Forms.BindingSource comentarioBindingSource;
+        private System.Windows.Forms.DataGridView comentarioDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
 

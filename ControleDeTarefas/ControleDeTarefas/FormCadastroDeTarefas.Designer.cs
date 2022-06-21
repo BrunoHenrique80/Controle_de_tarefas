@@ -30,32 +30,18 @@ namespace ControleDeTarefas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label descricaoLabel;
             System.Windows.Forms.Label estatusLabel;
-            this.idTextBox = new System.Windows.Forms.TextBox();
             this.tarefaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.descricaoTextBox = new System.Windows.Forms.TextBox();
             this.estatusTextBox = new System.Windows.Forms.TextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            idLabel = new System.Windows.Forms.Label();
             descricaoLabel = new System.Windows.Forms.Label();
             estatusLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idLabel.ForeColor = System.Drawing.Color.White;
-            idLabel.Location = new System.Drawing.Point(0, 61);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 15);
-            idLabel.TabIndex = 1;
-            idLabel.Text = "Id";
             // 
             // descricaoLabel
             // 
@@ -73,20 +59,11 @@ namespace ControleDeTarefas
             estatusLabel.AutoSize = true;
             estatusLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             estatusLabel.ForeColor = System.Drawing.Color.White;
-            estatusLabel.Location = new System.Drawing.Point(227, 61);
+            estatusLabel.Location = new System.Drawing.Point(0, 52);
             estatusLabel.Name = "estatusLabel";
             estatusLabel.Size = new System.Drawing.Size(56, 15);
             estatusLabel.TabIndex = 5;
             estatusLabel.Text = "Estatus";
-            // 
-            // idTextBox
-            // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tarefaBindingSource, "Id", true));
-            this.idTextBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idTextBox.Location = new System.Drawing.Point(3, 79);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(126, 23);
-            this.idTextBox.TabIndex = 2;
             // 
             // tarefaBindingSource
             // 
@@ -106,7 +83,7 @@ namespace ControleDeTarefas
             // 
             this.estatusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tarefaBindingSource, "Estatus", true));
             this.estatusTextBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estatusTextBox.Location = new System.Drawing.Point(230, 79);
+            this.estatusTextBox.Location = new System.Drawing.Point(3, 70);
             this.estatusTextBox.Name = "estatusTextBox";
             this.estatusTextBox.Size = new System.Drawing.Size(140, 23);
             this.estatusTextBox.TabIndex = 6;
@@ -167,8 +144,6 @@ namespace ControleDeTarefas
             this.Controls.Add(this.estatusTextBox);
             this.Controls.Add(descricaoLabel);
             this.Controls.Add(this.descricaoTextBox);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroDeTarefas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -183,7 +158,6 @@ namespace ControleDeTarefas
         #endregion
 
         private System.Windows.Forms.BindingSource tarefaBindingSource;
-        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox descricaoTextBox;
         private System.Windows.Forms.TextBox estatusTextBox;
         private System.Windows.Forms.Button buttonSalvar;

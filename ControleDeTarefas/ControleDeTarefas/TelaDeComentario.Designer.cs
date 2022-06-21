@@ -30,7 +30,6 @@ namespace ControleDeTarefas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label id_TarefaLabel;
             System.Windows.Forms.Label id_UsuarioLabel;
             this.buttonInserirComentario = new System.Windows.Forms.Button();
@@ -38,15 +37,35 @@ namespace ControleDeTarefas
             this.buttonSairDoComentario = new System.Windows.Forms.Button();
             this.comentarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.descricaoTextBox = new System.Windows.Forms.TextBox();
-            this.idTextBox = new System.Windows.Forms.TextBox();
             this.id_TarefaTextBox = new System.Windows.Forms.TextBox();
             this.id_UsuarioTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            idLabel = new System.Windows.Forms.Label();
             id_TarefaLabel = new System.Windows.Forms.Label();
             id_UsuarioLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.comentarioBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // id_TarefaLabel
+            // 
+            id_TarefaLabel.AutoSize = true;
+            id_TarefaLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            id_TarefaLabel.ForeColor = System.Drawing.Color.White;
+            id_TarefaLabel.Location = new System.Drawing.Point(182, 40);
+            id_TarefaLabel.Name = "id_TarefaLabel";
+            id_TarefaLabel.Size = new System.Drawing.Size(64, 15);
+            id_TarefaLabel.TabIndex = 6;
+            id_TarefaLabel.Text = "Id Tarefa";
+            // 
+            // id_UsuarioLabel
+            // 
+            id_UsuarioLabel.AutoSize = true;
+            id_UsuarioLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            id_UsuarioLabel.ForeColor = System.Drawing.Color.White;
+            id_UsuarioLabel.Location = new System.Drawing.Point(12, 40);
+            id_UsuarioLabel.Name = "id_UsuarioLabel";
+            id_UsuarioLabel.Size = new System.Drawing.Size(73, 15);
+            id_UsuarioLabel.TabIndex = 8;
+            id_UsuarioLabel.Text = "Id Usuario";
             // 
             // buttonInserirComentario
             // 
@@ -99,67 +118,29 @@ namespace ControleDeTarefas
             // descricaoTextBox
             // 
             this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comentarioBindingSource, "Descricao", true));
+            this.descricaoTextBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descricaoTextBox.Location = new System.Drawing.Point(12, 129);
             this.descricaoTextBox.Multiline = true;
             this.descricaoTextBox.Name = "descricaoTextBox";
             this.descricaoTextBox.Size = new System.Drawing.Size(560, 167);
             this.descricaoTextBox.TabIndex = 5;
             // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idLabel.ForeColor = System.Drawing.Color.White;
-            idLabel.Location = new System.Drawing.Point(12, 54);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 15);
-            idLabel.TabIndex = 5;
-            idLabel.Text = "Id";
-            // 
-            // idTextBox
-            // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comentarioBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(37, 51);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTextBox.TabIndex = 6;
-            // 
-            // id_TarefaLabel
-            // 
-            id_TarefaLabel.AutoSize = true;
-            id_TarefaLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            id_TarefaLabel.ForeColor = System.Drawing.Color.White;
-            id_TarefaLabel.Location = new System.Drawing.Point(362, 54);
-            id_TarefaLabel.Name = "id_TarefaLabel";
-            id_TarefaLabel.Size = new System.Drawing.Size(68, 15);
-            id_TarefaLabel.TabIndex = 6;
-            id_TarefaLabel.Text = "Id Tarefa:";
-            // 
             // id_TarefaTextBox
             // 
             this.id_TarefaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comentarioBindingSource, "Id_Tarefa", true));
-            this.id_TarefaTextBox.Location = new System.Drawing.Point(433, 51);
+            this.id_TarefaTextBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_TarefaTextBox.Location = new System.Drawing.Point(185, 58);
             this.id_TarefaTextBox.Name = "id_TarefaTextBox";
-            this.id_TarefaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.id_TarefaTextBox.Size = new System.Drawing.Size(100, 23);
             this.id_TarefaTextBox.TabIndex = 7;
-            // 
-            // id_UsuarioLabel
-            // 
-            id_UsuarioLabel.AutoSize = true;
-            id_UsuarioLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            id_UsuarioLabel.ForeColor = System.Drawing.Color.White;
-            id_UsuarioLabel.Location = new System.Drawing.Point(161, 54);
-            id_UsuarioLabel.Name = "id_UsuarioLabel";
-            id_UsuarioLabel.Size = new System.Drawing.Size(77, 15);
-            id_UsuarioLabel.TabIndex = 8;
-            id_UsuarioLabel.Text = "Id Usuario:";
             // 
             // id_UsuarioTextBox
             // 
             this.id_UsuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comentarioBindingSource, "Id_Usuario", true));
-            this.id_UsuarioTextBox.Location = new System.Drawing.Point(244, 52);
+            this.id_UsuarioTextBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_UsuarioTextBox.Location = new System.Drawing.Point(15, 58);
             this.id_UsuarioTextBox.Name = "id_UsuarioTextBox";
-            this.id_UsuarioTextBox.Size = new System.Drawing.Size(100, 20);
+            this.id_UsuarioTextBox.Size = new System.Drawing.Size(100, 23);
             this.id_UsuarioTextBox.TabIndex = 9;
             // 
             // label2
@@ -184,8 +165,6 @@ namespace ControleDeTarefas
             this.Controls.Add(this.id_UsuarioTextBox);
             this.Controls.Add(id_TarefaLabel);
             this.Controls.Add(this.id_TarefaTextBox);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.descricaoTextBox);
             this.Controls.Add(this.buttonSairDoComentario);
             this.Controls.Add(this.label1);
@@ -206,7 +185,6 @@ namespace ControleDeTarefas
         private System.Windows.Forms.Button buttonSairDoComentario;
         private System.Windows.Forms.BindingSource comentarioBindingSource;
         private System.Windows.Forms.TextBox descricaoTextBox;
-        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox id_TarefaTextBox;
         private System.Windows.Forms.TextBox id_UsuarioTextBox;
         private System.Windows.Forms.Label label2;

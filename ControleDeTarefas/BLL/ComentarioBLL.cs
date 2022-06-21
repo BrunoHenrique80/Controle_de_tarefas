@@ -11,7 +11,7 @@ namespace BLL
             ComentarioDAL comentarioDAL = new ComentarioDAL();
             return comentarioDAL.Inserir(comentario);
         }
-        public DataTable Buscar(string _filtro)
+        public DataTable Buscar(int _filtro)
         {
             ComentarioDAL comentarioDAL = new ComentarioDAL();
             return comentarioDAL.Buscar(_filtro);
