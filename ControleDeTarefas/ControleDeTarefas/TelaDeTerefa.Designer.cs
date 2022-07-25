@@ -60,11 +60,11 @@ namespace ControleDeTarefas
             this.panel1.Controls.Add(this.buttonSairDaTarefa);
             this.panel1.Controls.Add(this.Menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(685, 100);
+            this.panel1.Size = new System.Drawing.Size(688, 100);
             this.panel1.TabIndex = 0;
             // 
             // buttonSairDaTarefa
@@ -87,19 +87,19 @@ namespace ControleDeTarefas
             // 
             this.Menu.AutoSize = true;
             this.Menu.BackColor = System.Drawing.Color.Transparent;
-            this.Menu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Menu.Location = new System.Drawing.Point(248, 24);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(170, 46);
+            this.Menu.Size = new System.Drawing.Size(154, 46);
             this.Menu.TabIndex = 0;
             this.Menu.Text = "Tarefas";
             // 
             // textBoxBuscar
             // 
-            this.textBoxBuscar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBuscar.Location = new System.Drawing.Point(12, 106);
             this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(569, 23);
+            this.textBoxBuscar.Size = new System.Drawing.Size(569, 22);
             this.textBoxBuscar.TabIndex = 4;
             // 
             // buttonBuscar
@@ -107,7 +107,7 @@ namespace ControleDeTarefas
             this.buttonBuscar.BackColor = System.Drawing.Color.Maroon;
             this.buttonBuscar.FlatAppearance.BorderSize = 0;
             this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuscar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBuscar.ForeColor = System.Drawing.Color.White;
             this.buttonBuscar.Location = new System.Drawing.Point(590, 104);
             this.buttonBuscar.Name = "buttonBuscar";
@@ -122,7 +122,7 @@ namespace ControleDeTarefas
             this.buttonAdicionar.BackColor = System.Drawing.Color.Maroon;
             this.buttonAdicionar.FlatAppearance.BorderSize = 0;
             this.buttonAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdicionar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdicionar.ForeColor = System.Drawing.Color.White;
             this.buttonAdicionar.Location = new System.Drawing.Point(12, 533);
             this.buttonAdicionar.Name = "buttonAdicionar";
@@ -190,7 +190,7 @@ namespace ControleDeTarefas
             this.buttonExcluir.BackColor = System.Drawing.Color.Maroon;
             this.buttonExcluir.FlatAppearance.BorderSize = 0;
             this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExcluir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExcluir.ForeColor = System.Drawing.Color.White;
             this.buttonExcluir.Location = new System.Drawing.Point(490, 533);
             this.buttonExcluir.Name = "buttonExcluir";
@@ -205,7 +205,7 @@ namespace ControleDeTarefas
             this.buttonComentar.BackColor = System.Drawing.Color.Maroon;
             this.buttonComentar.FlatAppearance.BorderSize = 0;
             this.buttonComentar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonComentar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonComentar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonComentar.ForeColor = System.Drawing.Color.White;
             this.buttonComentar.Location = new System.Drawing.Point(256, 532);
             this.buttonComentar.Name = "buttonComentar";
@@ -249,7 +249,7 @@ namespace ControleDeTarefas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(685, 619);
+            this.ClientSize = new System.Drawing.Size(688, 569);
             this.Controls.Add(this.comentarioDataGridView);
             this.Controls.Add(this.buttonComentar);
             this.Controls.Add(this.buttonExcluir);

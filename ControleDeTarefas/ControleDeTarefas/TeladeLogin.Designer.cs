@@ -60,11 +60,11 @@ namespace ControleDeTarefas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(101, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 46);
+            this.label1.Size = new System.Drawing.Size(118, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             this.label1.UseWaitCursor = true;
@@ -89,19 +89,19 @@ namespace ControleDeTarefas
             // textBoxUsuario
             // 
             this.textBoxUsuario.BackColor = System.Drawing.Color.White;
-            this.textBoxUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsuario.Location = new System.Drawing.Point(36, 169);
             this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.Size = new System.Drawing.Size(206, 23);
+            this.textBoxUsuario.Size = new System.Drawing.Size(206, 22);
             this.textBoxUsuario.TabIndex = 2;
             this.textBoxUsuario.UseWaitCursor = true;
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSenha.Location = new System.Drawing.Point(36, 237);
             this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.Size = new System.Drawing.Size(206, 23);
+            this.textBoxSenha.Size = new System.Drawing.Size(206, 22);
             this.textBoxSenha.TabIndex = 3;
             this.textBoxSenha.UseWaitCursor = true;
             // 
@@ -109,11 +109,11 @@ namespace ControleDeTarefas
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
             this.label2.Location = new System.Drawing.Point(33, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 15);
+            this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Usuario";
             this.label2.UseWaitCursor = true;
@@ -122,11 +122,11 @@ namespace ControleDeTarefas
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(33, 219);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 15);
+            this.label3.Size = new System.Drawing.Size(46, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Senha";
             this.label3.UseWaitCursor = true;
@@ -136,7 +136,7 @@ namespace ControleDeTarefas
             this.buttonEntrada.BackColor = System.Drawing.Color.Maroon;
             this.buttonEntrada.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.buttonEntrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEntrada.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEntrada.ForeColor = System.Drawing.Color.White;
             this.buttonEntrada.Location = new System.Drawing.Point(109, 336);
             this.buttonEntrada.Name = "buttonEntrada";
@@ -152,7 +152,7 @@ namespace ControleDeTarefas
             this.buttonCadastroDeUsuario.BackColor = System.Drawing.Color.Maroon;
             this.buttonCadastroDeUsuario.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.buttonCadastroDeUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadastroDeUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCadastroDeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCadastroDeUsuario.ForeColor = System.Drawing.Color.White;
             this.buttonCadastroDeUsuario.Location = new System.Drawing.Point(81, 382);
             this.buttonCadastroDeUsuario.Name = "buttonCadastroDeUsuario";
